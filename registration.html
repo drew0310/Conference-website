@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<title>Conference Registration</title>
+	<style>
+		form {
+			font-family: verdana;
+			font-size: 5;
+		}
+
+		.mydiv {
+			border: 5px outset #202e79;
+			background-color: #69a2cd;
+			text-align: center;
+			width: 50%;
+			margin: auto;
+		}
+
+
+		input[type="text"] {
+			background-color: #cce5ff;
+			border-radius: 6px;
+			width: 200px;
+			height: 40px;
+		}
+
+		input[list="qualifications"] {
+			background-color: #cce5ff;
+			border-radius: 6px;
+			width: 200px;
+			height: 40px;
+		}
+
+		input[type="submit"] {
+			padding: 10px 20px; 
+			color: #ffffff;
+			background-color: #0066cc;
+			border: 2px;
+			cursor: pointer;
+			border-radius: 4px;
+			width: 100px;
+			height: 40px;
+
+
+		}
+
+		input[type="reset"] {
+			padding: 10px 20px; 
+			color: #ffffff;
+			background-color: #0066cc;
+			border: 2px;
+			cursor: pointer;
+			border-radius: 4px;
+			width: 100px;
+			height: 40px;
+
+		}
+
+	</style>
+</head>
+
+<body background="https://ioecon.eai-conferences.org/2022/wp-content/uploads/sites/549/2021/10/slider1.jpg"
+	style="background-size:cover" link="blue" vlink="purple">
+	<header><img src="https://www.logolynx.com/images/logolynx/2e/2eaec84e75333bf14596e8fa3ee66e68.png" width="400"
+			height="100"></header>
+	<h1 style="text-align:center"><b>INTERNATIONAL CONFERENCE</b></h1><br>
+	<hr align="center" size="10" width="1000" color="black">
+	<br>
+
+	<ul>
+		<font size="3" face="Copperplate Gothic">
+			<li><a href="conference.html" title="Home" target="_blank"><b>Home</b></a></li>
+			<li><a href="committee.html" title="Committee" target="_blank"><b>Committee</b></a></li>
+			<li><a href="call.html" title="Call for Papers" target="_blank"><b>Call for Papers</b></a></li>
+			<li><a href="dates.html" title="Important Dates" target="_blank"><b>Important Dates</b></a></li>
+			<li><a href="workshops.html" title="Workshops" target="blank"><b>Workshops</b></a></li>
+			<li><a href="registration.html" title="Registration" target="_blank"><b>Registration</b></a></li>
+			<li><a href="contact.html" title="Contact" target="_blank"><b>Contact</b></a></li>
+			<li><a href="gallery.html" title="Image Gallery" target="_blank"><b>Gallery</b></a></li>
+
+		</font>
+	</ul>
+
+	<br><br>
+
+	<font face="5" style="Verdana">
+		<p><i><b>Enter the details for the conference registration:</b></i>
+		<p>
+		<div class="mydiv">
+			<form autocomplete="on">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" autofocus required><br><br>
+				<label for="email">Email-ID:</label>
+				<input type="text" id="email" name="email" value="eg. xyz@gmail.com" autofocus required><br><br>
+				<label>Qualification:</label>
+				<input list="qualifications" name="qualification">
+				<datalist id="qualifications">
+					<option value="Undergraduate">
+					<option value="Postgraduate">
+					<option value="Research Scholar">
+					<option value="Doctor">
+				</datalist><br><br>
+
+				<label for="contact">Contact Number:</label>
+				<input type="text" id="contact" name="contact" value="eg. +91 XXXXXXXXXX" autofocus required><br>
+				<p>Registration purpose (select one or more):</p>
+				<input type="checkbox" id="paper" name="paper">
+				<label for="paper">Paper presentation</label><br>
+				<input type="checkbox" id="workshop" name="workshop">
+				<label for="workshop">Workshop participation</label><br>
+				<input type="checkbox" id="journal" name="journal">
+				<label for="journal">Journal publication release</label><br><br>
+				<label for="myfile">Upload your resume here as PDF:</label>
+				<input type="file" id="myfile" name="myfile" autofocus required><br><br>
+				<input type="submit" value="Register">
+				<input type="reset" value="Clear all">
+			</form>
+		</div>
+
+		<br><br><br>
+		<footer>
+			<center>
+				<h2>Copyright IEEE Inc. 2023</h2>
+			</center>
+		</footer><br><br>
+
+		<a href="conference.html">
+			<h3>
+				<center>Go to Homepage</center>
+			</h3>
+		</a>
+</body>
+
+</html>
